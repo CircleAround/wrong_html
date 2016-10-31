@@ -1,44 +1,52 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+	<title>サンプル</title>
 	<meta charset="UTF-8">
-	<title>Document</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="wrapper">
 	<header class="head">
-		<h1>ロゴ</h1>
+		<h3><img src="./img/logo.png"></h3>
 	</header>
 	<div class="container clear">
 		<div class="content">
 			<section class="works clear">
 				<div class="work">
 					<span class="label">New</span>
-					<a href="#" class="detail_link">
-						detail
-					</a>
+					<strong>
+						<a href="#" class="detail_link">
+							detail
+						</a>
+					</strong>
 				</div>
 				<div class="work">
 					<span class="label">New</span>
-					<a href="#" class="detail_link">
-						detail
-					</a>
+					<strong>
+						<a href="#" class="detail_link">
+							detail
+						</a>
+					</strong>
 				</div>
 				<div class="work">
-					<a href="#" class="detail_link">
-						detail
-					</a>
+					<strong>
+						<a href="#" class="detail_link">
+							detail
+						</a>
+					</strong>
 				</div>
 				<div class="work">
-					<a href="#" class="detail_link">
-						detail
-					</a>
+					<strong>
+						<a href="#" class="detail_link">
+							detail
+						</a>
+					</strong>
 				</div>
 			</section>
 			<section class="profile">
-				<h2 class="headline">Profile</h2>
-				<div class="contents clear">
+				<h2 class="headline"><center>Profile</center></h2>
+				<article class="contents clear">
 					<div class="group_left">
 						<div class="thumb">
 						</div>
@@ -46,37 +54,64 @@
 						</div>
 					</div>
 					<div class="group_right">
-					</div>
-				</div>
+						<table>
+							<tr>
+								<th class="profile_label">スキル</th>
+							</tr>
+							<tr>
+								<td>JavaScriptが得意</td>
+							</tr>
+							<tr>
+								<th class="profile_label">紹介</th>
+							</tr>
+							<tr>
+								<td>
+									<p>フロントエンドエンジニアです。</p>
+									<p>HTML/CSS/JavaScriptのお仕事承ります。</p>
+								</td>
+							</tr>
+						</table>
+				</article>
 			</section>
 		</div>
 		<div class="sidebar">
 			<div class="menu">
-				<span class="sidebar_label">Menu</span>
+				<h2 class="label-h2"><p>Menu</p></h2>
 				<ul class="lists">
+					<div class="list wrapper">
+					<a href="">Home</a>
+					</div>
 					<li class="list">
-						<a href="">Home</a>
+					<a href="">Skill</a>
 					</li>
 					<li class="list">
-						<a href="">Skill</a>
+					<a href="">About</a>
 					</li>
 					<li class="list">
-						<a href="">About</a>
-					</li>
-					<li class="list">
-						<a href="">Contact</a>
+					<a href="">Contact</a>
 					</li>
 				</ul>
 			</div>
 			<div class="link_group">
-				<span class="sidebar_label">Links</span>
-				<ul class="links">
-					<li class="link"></li>
-					<li class="link"></li>
-				</ul>
+				<h2 class="label-h2">
+					<span>Links</span><p style="font-size:11px;">技術ネタを発信してます</p>
+				</h2>
+				<span class="link_wrapper">
+					<dl class="links">
+						<dd>ホームページ</dd>
+						<dt>
+							<a href="#">http://example.com</a>
+						</dt>
+						<dd>ブログ</dd>
+						<dt>
+							<a href="#">http://blog.com</a>
+						</dt>
+					</dl>
+				</span>
 			</div>
 		</div>
 	</div>
+	<div style="display:none;">フロントエンジニア、フリーランス、仕事、HTML、CSS、JavaScript</div>
 </div>
 
 </body>

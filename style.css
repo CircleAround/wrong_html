@@ -2,7 +2,7 @@ a {
 	text-decoration: none;
 }
 
-ul {
+ul, p, h1, h2, dl, dd, dt {
 	padding: 0;
 	margin: 0;
 }
@@ -10,6 +10,12 @@ ul {
 li {
 	list-style: none;
 }
+
+h2 {
+	background-color: blue;
+	color: #FFFFFF;
+}
+
 
 .clear {
 	clear: both;
@@ -31,6 +37,7 @@ li {
 }
 
 .container .content {
+	position: relative;
 	width: 800px;
 	height: 500px;
 	margin-right: 20px;
@@ -38,6 +45,7 @@ li {
 }
 
 .content .works {
+	position: relative;
 	margin-left: -20px;
 	overflow: auto;
 }
@@ -101,7 +109,10 @@ li {
 	float: right;
 	width: 470px;
 	height: 300px;
-	background-color: green;
+}
+
+.content .profile .contents .group_right .profile_label {
+	text-align: left;
 }
 
 .container .sidebar {
@@ -112,8 +123,7 @@ li {
 	padding: 15px;
 }
 
-.container .sidebar .sidebar_label {
-	border-bottom: solid 1px black;
+.container .sidebar .label-h2 {
 	display: block;
 	margin-bottom: 15px;
 }
