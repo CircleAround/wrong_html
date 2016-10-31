@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+
+		a {
+			text-decoration: none;
+		}
+
+		ul {
+			padding: 0;
+			margin: 0;
+		}
+
+		li {
+			list-style: none;
+		}
+
+		.clear {
+			clear: both;
+		}
+
+		.wrapper {
+			width: 100%;
+			min-width: 1020px;
+		}
+
+		.head {
+			width: 1020px;
+			margin: auto;
+		}
+
+		.container {
+			width: 1020px;
+			margin: auto;
+		}
+
+		.container .content {
+			width: 800px;
+			height: 500px;
+			margin-right: 20px;
+			float: left;
+		}
+
+		.content .works {
+			margin-left: -20px;
+			overflow: auto;
+		}
+
+		.content .works .work {
+			position: relative;
+			width: 390px;
+			height: 200px;
+			float: left;
+			margin: 0 0 20px 20px;
+			border: 1px solid black;
+			box-sizing: border-box;
+		}
+
+		.content .works .work .label {
+			position: absolute;
+			top: 10px;
+			left: -8px;
+			display: inline-block;
+			background-color: red;
+			padding: 3px 5px;
+			color: #FFFFFF;
+			border-radius: 3px;
+			font-size: 11px;
+		}
+
+		.content .works .work .detail_link {
+			position: absolute;
+			display: block;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			-moz-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			-o-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			border-top: solid 1px black;
+			border-bottom: solid 1px black;
+			color: black;
+			padding: 5px 20px;
+		}
+
+		.content .profile {
+		}
+
+		.content .profile .headline {
+		}
+
+		.content .profile .contents {
+			box-sizing: border-box;
+			border: solid 1px black;
+			padding: 15px;
+			overflow: auto;
+
+		}
+
+		.content .profile .contents .group_left {
+			float: left;
+			margin-right: 10px;
+			width: 288px;
+			height: 300px;
+			background-color: blue;
+		}
+
+		.content .profile .contents .group_right {
+			float: right;
+			width: 470px;
+			height: 300px;
+			background-color: green;
+		}
+
+		.container .sidebar {
+			width: 200px;
+			float: left;
+			border: solid 1px black;
+			box-sizing: border-box;
+			padding: 15px;
+		}
+
+		.container .sidebar .sidebar_label {
+			border-bottom: solid 1px black;
+			display: block;
+			margin-bottom: 15px;
+		}
+
+		.container .sidebar .menu {
+			margin-bottom: 20px;
+		}
+
+		.container .sidebar .link_group .link {
+			width: 100%;
+			height: 100px;
+			background-color: blue;
+			margin-bottom: 15px;
+		}
+
+	</style>
+</head>
+<body>
+<div class="wrapper">
+	<header class="head">
+		<h1>ロゴ</h1>
+	</header>
+	<div class="container clear">
+		<div class="content">
+			<section class="works clear">
+				<div class="work">
+					<span class="label">New</span>
+					<a href="#" class="detail_link">
+						detail
+					</a>
+				</div>
+				<div class="work">
+					<span class="label">New</span>
+					<a href="#" class="detail_link">
+						detail
+					</a>
+				</div>
+				<div class="work">
+					<a href="#" class="detail_link">
+						detail
+					</a>
+				</div>
+				<div class="work">
+					<a href="#" class="detail_link">
+						detail
+					</a>
+				</div>
+			</section>
+			<section class="profile">
+				<h2 class="headline">Profile</h2>
+				<div class="contents clear">
+					<div class="group_left">
+						<div class="thumb">
+						</div>
+						<div class="sns_links">
+						</div>
+					</div>
+					<div class="group_right">
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="sidebar">
+			<div class="menu">
+				<span class="sidebar_label">Menu</span>
+				<ul class="lists">
+					<li class="list">
+						<a href="">Home</a>
+					</li>
+					<li class="list">
+						<a href="">Skill</a>
+					</li>
+					<li class="list">
+						<a href="">About</a>
+					</li>
+					<li class="list">
+						<a href="">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="link_group">
+				<span class="sidebar_label">Links</span>
+				<ul class="links">
+					<li class="link"></li>
+					<li class="link"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
