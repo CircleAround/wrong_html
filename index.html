@@ -1,117 +1,143 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-	<title>サンプル</title>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="style.css">
+  <!-- 順番はcharsetが先 -->
+  <meta charset="UTF-8">
+  <title>サンプル</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="wrapper">
-	<header class="head">
-		<h3><img src="./img/logo.png"></h3>
-	</header>
-	<div class="container clear">
-		<div class="content">
-			<section class="works clear">
-				<div class="work">
-					<span class="label">New</span>
-					<strong>
-						<a href="#" class="detail_link">
-							detail
-						</a>
-					</strong>
-				</div>
-				<div class="work">
-					<span class="label">New</span>
-					<strong>
-						<a href="#" class="detail_link">
-							detail
-						</a>
-					</strong>
-				</div>
-				<div class="work">
-					<strong>
-						<a href="#" class="detail_link">
-							detail
-						</a>
-					</strong>
-				</div>
-				<div class="work">
-					<strong>
-						<a href="#" class="detail_link">
-							detail
-						</a>
-					</strong>
-				</div>
-			</section>
-			<section class="profile">
-				<h2 class="headline"><center>Profile</center></h2>
-				<article class="contents clear">
-					<div class="group_left">
-						<div class="thumb">
-						</div>
-						<div class="sns_links">
-						</div>
-					</div>
-					<div class="group_right">
-						<table>
-							<tr>
-								<th class="profile_label">スキル</th>
-							</tr>
-							<tr>
-								<td>JavaScriptが得意</td>
-							</tr>
-							<tr>
-								<th class="profile_label">紹介</th>
-							</tr>
-							<tr>
-								<td>
-									<p>フロントエンドエンジニアです。</p>
-									<p>HTML/CSS/JavaScriptのお仕事承ります。</p>
-								</td>
-							</tr>
-						</table>
-				</article>
-			</section>
-		</div>
-		<div class="sidebar">
-			<div class="menu">
-				<h2 class="label-h2"><p>Menu</p></h2>
-				<ul class="lists">
-					<div class="list wrapper">
-					<a href="">Home</a>
-					</div>
-					<li class="list">
-					<a href="">Skill</a>
-					</li>
-					<li class="list">
-					<a href="">About</a>
-					</li>
-					<li class="list">
-					<a href="">Contact</a>
-					</li>
-				</ul>
-			</div>
-			<div class="link_group">
-				<h2 class="label-h2">
-					<span>Links</span><p style="font-size:11px;">技術ネタを発信してます</p>
-				</h2>
-				<span class="link_wrapper">
-					<dl class="links">
-						<dd>ホームページ</dd>
-						<dt>
-							<a href="#">http://example.com</a>
-						</dt>
-						<dd>ブログ</dd>
-						<dt>
-							<a href="#">http://blog.com</a>
-						</dt>
-					</dl>
-				</span>
-			</div>
-		</div>
-	</div>
-	<div style="display:none;">フロントエンジニア、フリーランス、仕事、HTML、CSS、JavaScript</div>
+  <header class="head">
+    <!-- 「h付いてれば良いんじゃね」 -->
+    <!-- <h3><img src="./img/logo.png"></h3> -->
+    <h1><img src="./img/logo.png"></h1>
+  </header>
+  <div class="container clear">
+    <div class="content">
+      <section class="works clear">
+        <div class="work">
+          <span class="label">New</span>
+          <strong><!-- 「字を太くしたいしー」 -->
+            <!-- 「とりあえずシャープで良いっすよね」 -->
+            <!-- 自分自身のページへのリンク・暫定で決めたい時 -->
+            <a href="#" class="detail_link">
+              detail
+            </a>
+          </strong>
+        </div>
+        <div class="work">
+          <span class="label">New</span>
+          <strong>
+            <a href="#" class="detail_link">
+              detail
+            </a>
+          </strong>
+        </div>
+        <div class="work">
+          <strong>
+            <a href="#" class="detail_link">
+              detail
+            </a>
+          </strong>
+        </div>
+        <div class="work">
+          <strong>
+            <a href="#" class="detail_link">
+              detail
+            </a>
+          </strong>
+        </div>
+      </section>
+      <section class="profile">
+        <h2 class="headline">
+          <!-- 「見た目〜」-->
+          <!-- cssでやるっしょ -->
+          <!-- 昔あった古いタグ。レイアウトを示すのでcssでやること -->
+          <center>Profile</center>
+        </h2>
+        <!-- section の中に article ? -->
+        <!-- article は中ではダメ -->
+        <article class="contents clear">
+          <div class="group_left">
+            <div class="thumb">
+            </div>
+            <div class="sns_links">
+            </div>
+          </div>
+          <!-- rightはしないほうがよさそう？ -->
+          <div class="group_right">
+            <!-- このテーブルって？dlとかじゃない？ -->
+            <table>
+              <tr>
+                <th class="profile_label">スキル</th>
+              </tr>
+              <tr>
+                <td>JavaScriptが得意</td>
+              </tr>
+              <tr>
+                <th class="profile_label">紹介</th>
+              </tr>
+              <tr>
+                <td>
+                  <p>フロントエンドエンジニアです。</p>
+                  <p>HTML/CSS/JavaScriptのお仕事承ります。</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </article>
+      </section>
+    </div>
+    <div class="sidebar">
+      <div class="menu">
+        <!-- 意味なくハイフンとアンダースコア混ぜないよ -->
+        <h2 class="label-h2"><p>Menu</p></h2>
+        <ul class="lists">
+          <!-- liじゃなーい -->
+          <div class="list wrapper">
+          <a href="">Home</a>
+          </div>
+          <li class="list">
+            <!-- インデント -->
+          <a href="">Skill</a>
+          </li>
+          <li class="list">
+          <a href="">About</a>
+          </li>
+          <li class="list">
+          <a href="">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="link_group">
+        <!-- class名に要素名を入れている -->
+        <h2 class="label-h2">
+          <!-- styleを直接指定 -->
+          <span>Links</span><p style="font-size:11px;">技術ネタを発信してます</p>
+        </h2>
+        <!-- インライン要素でブロック要素 -->
+        <span class="link_wrapper">
+          <dl class="links">
+            <!-- dd？dt？ -->
+            <dd>ホームページ</dd>
+            <dt>
+              <a href="#">http://example.com</a>
+            </dt>
+            <dd>ブログ</dd>
+            <dt>
+              <a href="#">http://blog.com</a>
+            </dt>
+          </dl>
+        </span>
+      </div>
+    </div>
+  </div>
+  <!-- 消す指定はCSS？ -->
+  <!-- キーワードとしてほしい？ SEOでペナルティ判定されるー
+    color, font-size, opacity
+  -->
+  <div style="display:none;">フロントエンジニア、フリーランス、仕事、HTML、CSS、JavaScript</div>
 </div>
 
 </body>
